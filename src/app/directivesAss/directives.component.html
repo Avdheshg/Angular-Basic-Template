@@ -1,0 +1,48 @@
+
+<button class="btn btn-primary"
+    [ngClass]="{active: activeStatus === true}"
+    (click)="onToggleDetails()"
+    
+>
+Display Details</button>
+
+<p
+    *ngIf="showSecret"
+> 
+Secret password is Tuna </p> 
+<br>
+<p 
+    *ngFor="let counter of outputArray; let i = index"
+    [ngClass]="{greater: i >= 4}"
+> 
+{{counter}} </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
